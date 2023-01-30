@@ -6,3 +6,5 @@ Features:
 
 - No borders/shadows
 - Low contrast for punctuation and link targets
+
+![Screenshot](screenshot.png)

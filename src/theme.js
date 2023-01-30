@@ -694,13 +694,13 @@ function getTheme({ theme, name }) {
         },
       },
       {
-        scope: ["markup.underline.link.markdown", "constant.other.reference.link.markdown"],
+        scope: ["markup.underline.link.markdown", "constant.other.reference.link.markdown", "markup.underline.link.image.markdown"],
         settings: {
           foreground: lightDark(scale.gray[3], scale.gray[3])
         }
       },
       {
-        scope: ["punctuation.definition.metadata.markdown", "punctuation.definition.link.title", "punctuation.definition.italic", "punctuation.definition.bold", "punctuation.definition.heading", "punctuation.definition.constant"],
+        scope: ["punctuation.definition.metadata.markdown", "punctuation.definition.link.title", "punctuation.definition.italic", "punctuation.definition.bold", "punctuation.definition.heading", "punctuation.definition.constant", "punctuation.definition.link.description"],
         settings: {
           foreground: lightDark(scale.gray[5], scale.gray[5])
         }
