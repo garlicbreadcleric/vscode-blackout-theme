@@ -700,7 +700,7 @@ function getTheme({ theme, name }) {
         }
       },
       {
-        scope: ["punctuation.definition.metadata.markdown", "punctuation.definition.link.title", "punctuation.definition.italic", "punctuation.definition.bold", "punctuation.definition.heading", "punctuation.definition.constant", "punctuation.definition.link.description"],
+        scope: ["punctuation.definition.metadata.markdown", "punctuation.definition.link.title", "punctuation.definition.italic", "punctuation.definition.bold", "punctuation.definition.heading", "punctuation.definition.constant", "punctuation.definition.link.description", "punctuation.separator.key-value.markdown"],
         settings: {
           foreground: lightDark(scale.gray[5], scale.gray[5])
         }
