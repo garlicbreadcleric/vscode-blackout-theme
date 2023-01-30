@@ -41,7 +41,7 @@ function getTheme({ theme, name }) {
   return {
     name: name,
     colors: {
-      focusBorder          : color.accent.emphasis,
+      // focusBorder          : color.accent.emphasis,
       foreground           : color.fg.default,
       descriptionForeground: color.fg.muted,
       errorForeground      : color.danger.fg,
@@ -49,10 +49,10 @@ function getTheme({ theme, name }) {
       "textLink.foreground"      : color.accent.fg,
       "textLink.activeForeground": color.accent.fg,
       "textBlockQuote.background": color.canvas.inset,
-      "textBlockQuote.border"    : color.border.default,
+      // "textBlockQuote.border"    : color.border.default,
       "textCodeBlock.background" : color.neutral.muted,
       "textPreformat.foreground" : color.fg.muted,
-      "textSeparator.foreground" : color.border.muted,
+      // "textSeparator.foreground" : color.border.muted,
 
       "icon.foreground"           : color.fg.muted,
       "keybindingLabel.foreground": color.fg.default,
@@ -66,15 +66,15 @@ function getTheme({ theme, name }) {
       "button.secondaryHoverBackground": color.btn.hoverBg,
 
       "checkbox.background": color.canvas.subtle,
-      "checkbox.border"    : color.border.default,
+      // "checkbox.border"    : color.border.default,
 
       "dropdown.background"    : color.canvas.overlay,
-      "dropdown.border"        : color.border.default,
+      // "dropdown.border"        : color.border.default,
       "dropdown.foreground"    : color.fg.default,
       "dropdown.listBackground": color.canvas.overlay,
 
-      "input.background"           : color.canvas.default,
-      "input.border"               : color.border.default,
+      "input.background"           : color.canvas.inset,
+      // "input.border"               : color.border.default,
       "input.foreground"           : color.fg.default,
       "input.placeholderForeground": color.fg.subtle,
 
@@ -84,26 +84,26 @@ function getTheme({ theme, name }) {
       "progressBar.background": color.accent.emphasis,
 
       "titleBar.activeForeground"  : color.fg.muted,
-      "titleBar.activeBackground"  : color.canvas.default,
+      "titleBar.activeBackground"  : color.canvas.inset,
       "titleBar.inactiveForeground": color.fg.muted,
       "titleBar.inactiveBackground": color.canvas.inset,
-      "titleBar.border"            : color.border.default,
+      // "titleBar.border"            : color.border.default,
 
       "activityBar.foreground"        : color.fg.default,
       "activityBar.inactiveForeground": color.fg.muted,
-      "activityBar.background"        : color.canvas.default,
+      "activityBar.background"        : color.canvas.inset,
       "activityBarBadge.foreground"   : color.fg.onEmphasis,
       "activityBarBadge.background"   : color.accent.emphasis,
-      "activityBar.activeBorder"      : color.primer.border.active,
-      "activityBar.border"            : color.border.default,
+      // "activityBar.activeBorder"      : color.primer.border.active,
+      // "activityBar.border"            : color.border.default,
 
       "sideBar.foreground"             : color.fg.default,
       "sideBar.background"             : color.canvas.inset,
-      "sideBar.border"                 : color.border.default,
+      // "sideBar.border"                 : color.border.default,
       "sideBarTitle.foreground"        : color.fg.default,
       "sideBarSectionHeader.foreground": color.fg.default,
       "sideBarSectionHeader.background": color.canvas.inset,
-      "sideBarSectionHeader.border"    : color.border.default,
+      // "sideBarSectionHeader.border"    : color.border.default,
 
       "list.hoverForeground"            : color.fg.default,
       "list.inactiveSelectionForeground": color.fg.default,
@@ -116,27 +116,27 @@ function getTheme({ theme, name }) {
       "list.inactiveFocusBackground"    : color.accent.subtle,
       "list.highlightForeground"        : color.accent.fg,
 
-      "tree.indentGuidesStroke": color.border.muted,
+      // "tree.indentGuidesStroke": color.border.muted,
 
       "notificationCenterHeader.foreground": color.fg.muted,
       "notificationCenterHeader.background": color.canvas.subtle,
       "notifications.foreground"           : color.fg.default,
       "notifications.background"           : color.canvas.overlay,
-      "notifications.border"               : color.border.default,
+      // "notifications.border"               : color.border.default,
       "notificationsErrorIcon.foreground"  : color.danger.fg,
       "notificationsWarningIcon.foreground": color.attention.fg,
       "notificationsInfoIcon.foreground"   : color.accent.fg,
 
-      "pickerGroup.border"    : color.border.default,
+      // "pickerGroup.border"    : color.border.default,
       "pickerGroup.foreground": color.fg.muted,
       "quickInput.background" : color.canvas.overlay,
       "quickInput.foreground" : color.fg.default,
 
       "statusBar.foreground"             : color.fg.muted,
-      "statusBar.background"             : color.canvas.default,
-      "statusBar.border"                 : color.border.default,
-      "statusBar.focusBorder"            : alpha(color.accent.emphasis, 0.5),
-      "statusBar.noFolderBackground"     : color.canvas.default,
+      "statusBar.background"             : color.canvas.inset,
+      // "statusBar.border"                 : color.border.default,
+      // "statusBar.focusBorder"            : alpha(color.accent.emphasis, 0.5),
+      "statusBar.noFolderBackground"     : color.canvas.inset,
       "statusBar.debuggingForeground"    : color.fg.onEmphasis,
       "statusBar.debuggingBackground"    : color.danger.emphasis,
       "statusBarItem.prominentBackground": color.neutral.muted,
@@ -144,23 +144,24 @@ function getTheme({ theme, name }) {
       "statusBarItem.remoteBackground"   : lightDark(color.scale.gray[1], color.scale.gray[6]),
       "statusBarItem.hoverBackground"    : alpha(color.fg.default, 0.08),
       "statusBarItem.activeBackground"   : alpha(color.fg.default, 0.12),
-      "statusBarItem.focusBorder"        : color.accent.emphasis,
+      // "statusBarItem.focusBorder"        : color.accent.emphasis,
 
       "editorGroupHeader.tabsBackground": color.canvas.inset,
-      "editorGroupHeader.tabsBorder"    : color.border.default,
-      "editorGroup.border"              : color.border.default,
+      "editorGroupHeader.tabsBorder"    : "#0000",
+      "editorGroup.shadow"              : "#0000",
+      "editorGroup.border"              : "#0000",
 
       "tab.activeForeground"        : color.fg.default,
       "tab.inactiveForeground"      : color.fg.muted,
       "tab.inactiveBackground"      : color.canvas.inset,
-      "tab.activeBackground"        : color.canvas.default,
-      "tab.hoverBackground"         : color.canvas.default,
+      "tab.activeBackground"        : color.canvas.inset,
+      "tab.hoverBackground"         : color.canvas.inset,
       "tab.unfocusedHoverBackground": color.neutral.subtle,
-      "tab.border"                  : color.border.default,
-      "tab.unfocusedActiveBorderTop": color.border.default,
-      "tab.activeBorder"            : color.canvas.default,
-      "tab.unfocusedActiveBorder"   : color.canvas.default,
-      "tab.activeBorderTop"         : color.primer.border.active,
+      // "tab.border"                  : color.border.default,
+      // "tab.unfocusedActiveBorderTop": color.border.default,
+      // "tab.activeBorder"            : color.canvas.inset,
+      // "tab.unfocusedActiveBorder"   : color.canvas.inset,
+      // "tab.activeBorderTop"         : color.primer.border.active,
 
       "breadcrumb.foreground"               : color.fg.muted,
       "breadcrumb.focusForeground"          : color.fg.default,
@@ -168,11 +169,11 @@ function getTheme({ theme, name }) {
       "breadcrumbPicker.background"         : color.canvas.overlay,
 
       "editor.foreground"                 : color.fg.default,
-      "editor.background"                 : color.canvas.default,
+      "editor.background"                 : color.canvas.inset,
       "editorWidget.background"           : color.canvas.overlay,
       "editor.foldBackground"             : alpha(color.neutral.emphasis, 0.1),
       "editor.lineHighlightBackground"    : color.codemirror.activelineBg,
-      "editor.lineHighlightBorder"        : onlyDarkHighContrast(color.accent.fg),
+      // "editor.lineHighlightBorder"        : onlyDarkHighContrast(color.accent.fg),
       "editorLineNumber.foreground"       : lightDark(scale.gray[4], scale.gray[4]),
       "editorLineNumber.activeForeground" : color.fg.default,
       "editorIndentGuide.background"      : alpha(color.fg.default, 0.12),
@@ -187,11 +188,11 @@ function getTheme({ theme, name }) {
       "editor.selectionBackground"            : alpha(color.accent.fg, 0.2),
       "editor.selectionHighlightBackground"   : alpha(scale.green[3], 0.25),
       "editor.wordHighlightBackground"        : alpha(color.neutral.subtle, 0.5),
-      "editor.wordHighlightBorder"            : alpha(color.neutral.muted, 0.6),
+      // "editor.wordHighlightBorder"            : alpha(color.neutral.muted, 0.6),
       "editor.wordHighlightStrongBackground"  : alpha(color.neutral.muted, 0.3),
-      "editor.wordHighlightStrongBorder"      : alpha(color.neutral.muted, 0.6),
+      // "editor.wordHighlightStrongBorder"      : alpha(color.neutral.muted, 0.6),
       "editorBracketMatch.background"         : alpha(scale.green[3], 0.25),
-      "editorBracketMatch.border"             : alpha(scale.green[3], 0.6),
+      // "editorBracketMatch.border"             : alpha(scale.green[3], 0.6),
       // text selection for High Contrast themes
       "editor.selectionForeground"            : onlyHighContrast(color.fg.onEmphasis),
       "editor.selectionBackground"            : onlyHighContrast(color.neutral.emphasisPlus),
@@ -213,22 +214,22 @@ function getTheme({ theme, name }) {
       "diffEditor.removedLineBackground" : lightDark(alpha(scale.red[1], 0.3), alpha(scale.red[5], 0.15)),
       "diffEditor.removedTextBackground" : lightDark(alpha(scale.red[3], 0.4), alpha(scale.red[3], 0.3)),
 
-      "scrollbar.shadow"                  : alpha(scale.gray[5], 0.2),
+      "scrollbar.shadow"                  : "#0000",
       "scrollbarSlider.background"        : lightDark(alpha(scale.gray[4], 0.2), alpha(scale.gray[3], 0.2)),
       "scrollbarSlider.hoverBackground"   : lightDark(alpha(scale.gray[4], 0.24), alpha(scale.gray[3], 0.24)),
       "scrollbarSlider.activeBackground"  : lightDark(alpha(scale.gray[4], 0.28), alpha(scale.gray[3], 0.28)),
-      "editorOverviewRuler.border"        : lightDark(scale.white, scale.black),
+      "editorOverviewRuler.border"        : "#0000",
 
       "minimapSlider.background"          : lightDark(alpha(scale.gray[4], 0.2), alpha(scale.gray[3], 0.2)),
       "minimapSlider.hoverBackground"     : lightDark(alpha(scale.gray[4], 0.24), alpha(scale.gray[3], 0.24)),
       "minimapSlider.activeBackground"    : lightDark(alpha(scale.gray[4], 0.28), alpha(scale.gray[3], 0.28)),
 
       "panel.background"               : color.canvas.inset,
-      "panel.border"                   : color.border.default,
-      "panelTitle.activeBorder"        : color.primer.border.active,
+      "panel.border"                   : "#0000",
+      // "panelTitle.activeBorder"        : color.primer.border.active,
       "panelTitle.activeForeground"    : color.fg.default,
       "panelTitle.inactiveForeground"  : color.fg.muted,
-      "panelInput.border"              : color.border.default,
+      // "panelInput.border"              : color.border.default,
 
       "debugIcon.breakpointForeground": color.danger.fg,
 
@@ -571,14 +572,14 @@ function getTheme({ theme, name }) {
         scope: "markup.italic",
         settings: {
           fontStyle: "italic",
-          foreground: color.fg.default,
+          // foreground: color.fg.default,
         },
       },
       {
         scope: "markup.bold",
         settings: {
           fontStyle: "bold",
-          foreground: color.fg.default,
+          // foreground: color.fg.default,
         },
       },
       {
@@ -692,6 +693,18 @@ function getTheme({ theme, name }) {
           foreground: lightDark(scale.blue[8], scale.blue[1]),
         },
       },
+      {
+        scope: ["markup.underline.link.markdown", "constant.other.reference.link.markdown"],
+        settings: {
+          foreground: lightDark(scale.gray[3], scale.gray[3])
+        }
+      },
+      {
+        scope: ["punctuation.definition.metadata.markdown", "punctuation.definition.link.title", "punctuation.definition.italic", "punctuation.definition.bold", "punctuation.definition.heading", "punctuation.definition.constant"],
+        settings: {
+          foreground: lightDark(scale.gray[5], scale.gray[5])
+        }
+      }
     ],
   };
 }
