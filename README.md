@@ -4,7 +4,6 @@ A dark, high-contrast theme based on [GitHub's VS Code themes](https://github.co
 
 Features:
 
-- No borders/shadows
 - Low contrast for punctuation and link targets
 
 ![Screenshot](screenshot.png)
